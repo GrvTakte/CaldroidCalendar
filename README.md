@@ -1,3 +1,3 @@
 # CaldroidCalendar
 
-![Alt text](/Users/gaurav/Desktop/Screen Shot 2017-05-04 at 6.26.07 PM.jpg?raw=true "Optional Title")
+![Alt text](/Users/gaurav/Desktop/Screen Shot 2017-05-04 at 6.26.07 PM.png?raw=true "Optional Title")
