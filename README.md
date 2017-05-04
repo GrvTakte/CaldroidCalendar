@@ -1,3 +1,3 @@
 # CaldroidCalendar
 
-![Alt text](/Users/gaurav/Desktop/Screen Shot 2017-05-04 at 6.26.07 PM.png?raw=true "Optional Title")
+![Alt text](https://github.com/GrvTakte/CaldroidCalendar/blob/master/Screen%20Shot%202017-05-04%20at%206.26.07%20PM.png?raw=true "Optional Title")
