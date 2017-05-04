@@ -128,10 +128,22 @@ public class MainActivity extends AppCompatActivity{
             public void onSelectDate(Date date, View view) {
 
                     eventDate.setText(sdf.format(date));
+
+                if (!caldroidFragment.isSelectedDate(date)) {
+                    caldroidFragment.clearBackgroundDrawableForDate(date);
+                    caldroidFragment.refreshView();
+                }else{
+
+                    ColorDrawable select = new ColorDrawable(getResources().getColor(R.color.caldroid_light_red));
+                    caldroidFragment.setBackgroundDrawableForDate(select, date);
+                    caldroidFragment.refreshView();
+                }
+
             }
         };
 
         caldroidFragment.setCaldroidListener(caldroidListener);
+
     }
 
     @Override
@@ -159,7 +171,7 @@ public class MainActivity extends AppCompatActivity{
                 String comDate = obj.compareDate;
                 try{
                     Date date = sdf.parse(comDate);
-                    ColorDrawable back = new ColorDrawable(getResources().getColor(R.color.caldroidBackColor));
+                    ColorDrawable back = new ColorDrawable(getResources().getColor(R.color.colorPrimary));
                     caldroidFragment.setBackgroundDrawableForDate(back,date);
 
                 } catch (ParseException e) {
